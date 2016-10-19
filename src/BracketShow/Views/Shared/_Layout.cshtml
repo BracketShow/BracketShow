@@ -63,8 +63,12 @@
     </div>
 </div>
 <div class="container body-content">
-    @RenderBody()
+    <div style="margin-top: 5px; min-height: 60px; text-align: right;"> <script src="https://apis.google.com/js/platform.js"></script>
+        <span style="font-size: x-large;">Inscrivez-vous à notre chaine </span>
+        <div class="g-ytsubscribe" data-channelid="UCtnYlMKv9vbV6EITjrCwr1g" data-layout="full" data-count="default"></div>
+    </div> @RenderBody()
     <hr/>
+
     <footer>
         <p>&copy; 2016 - BracketShow</p>
     </footer>
@@ -79,12 +83,14 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
             asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
             asp-fallback-test="window.jQuery">
-        
+
+    
     </script>
     <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
             asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
             asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
-        
+
+    
     </script>
     <script src="~/js/site.min.js" asp-append-version="true"></script>
 </environment>
