@@ -61,6 +61,7 @@ demnade d'avoir le SDK de .NET Core d'installé si vous voulez ouvrir le projet.
 - Refactoring
 
 ## Architecture 
+- DDD
 - CQRS
 - Event Sourcing
 - Microservices
@@ -91,3 +92,4 @@ demnade d'avoir le SDK de .NET Core d'installé si vous voulez ouvrir le projet.
 - Active Record, CQRS
 - Testing and Mocking
 - Architectural Guidance
+- Aspect Programming
