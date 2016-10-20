@@ -13,7 +13,7 @@ namespace DecoratorExampleFinal
             NumberOfPlayers = numberOfPlayers;
         }
 
-        public int NumberOfPlayers { get; set; }
+        public override int NumberOfPlayers { get; }
 
         public override string Description => base.Description + $" Avec possibilité de jouer jusqu'à {NumberOfPlayers} joueurs!";
     }

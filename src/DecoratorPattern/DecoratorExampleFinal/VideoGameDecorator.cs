@@ -16,6 +16,8 @@ namespace DecoratorExampleFinal
         }
 
         public override string Description => _videoGame.Description;
+
+        public override int NumberOfPlayers => _videoGame.NumberOfPlayers;
     }
 
 }
