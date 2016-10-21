@@ -243,3 +243,6 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+# Ignore OpenCover output folder
+**/OpenCover/*
