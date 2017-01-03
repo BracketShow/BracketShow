@@ -15,7 +15,7 @@ demnade d'avoir le SDK de .NET Core d'installé si vous voulez ouvrir le projet.
 ## Liste de sujets
 
 ### Introduction
-- Hello world version entreprise
+- [Hello world version entreprise](https://www.youtube.com/watch?v=OYiF_1cL3dg)
 - Démarrer un projet Xamarin
 - Démarrer un projet Web
 - Démarrer un projet Desktop
@@ -24,14 +24,14 @@ demnade d'avoir le SDK de .NET Core d'installé si vous voulez ouvrir le projet.
 - Creational Patterns
  - Abstract Factory
  - Builder
- - Factory Method
+ - [Factory Method](https://www.youtube.com/watch?v=s1lztsgZk4c)
  - Prototype
  - Singleton
 - Structural Patterns
  - Adapter
  - Bridge
  - Composite
- - Decorator
+ - [Decorator](https://www.youtube.com/watch?v=WghYGmUd9nQ&t=1s)
  - Facade
  - Flyweight
  - Proxy
@@ -47,6 +47,9 @@ demnade d'avoir le SDK de .NET Core d'installé si vous voulez ouvrir le projet.
  - Strategy
  - Template Method
  - Visitor
+ 
+## Trucs et astuces
+ - [DebuggerDisplay](https://www.youtube.com/watch?v=V-N7xCobGnU)
  
 ## Événements
 - Agile Tour
