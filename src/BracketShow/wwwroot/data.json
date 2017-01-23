@@ -1,0 +1,44 @@
+﻿[
+  {
+    "Title": "E00 - Introduction",
+    "Category": "Bien démarrer",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=-XqZGH_XeoI",
+    "PublishDate": "2016-10-16T06:00:00"
+  },
+  {
+    "Title": "E01 - Hello world entreprise",
+    "Category": "Bien démarrer",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=OYiF_1cL3dg",
+    "PublishDate": "2016-11-02T06:00:00"
+  },
+  {
+    "Title": "E02 - Le décorateur",
+    "Category": "Patrons de conception",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=WghYGmUd9nQ",
+    "PublishDate": "2016-12-03T06:00:00"
+  },
+  {
+    "Title": "E03 - L'attribut DebuggerDisplay",
+    "Category": "Trucs et astuces",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=V-N7xCobGnU",
+    "PublishDate": "2016-11-02T06:00:00"
+  },
+  {
+    "Title": "E04 - Le Factory",
+    "Category": "Patrons de conception",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=s1lztsgZk4c",
+    "PublishDate": "2016-12-11T06:00:00"
+  },
+  {
+    "Title": "E05 - Clean code partie 1",
+    "Category": "Bonnes pratiques",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=2wgFQCulPPA",
+    "PublishDate": "2017-01-14T06:00:00"
+  },
+  {
+    "Title": "E06 - Clean code partie 2",
+    "Category": "Bonnes pratiques",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=-XRaFIFczL8",
+    "PublishDate": "2017-01-31T06:00:00"
+  }
+]

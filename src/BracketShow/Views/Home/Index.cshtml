@@ -1,57 +1,16 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model Models.HomeViewModels.IndexViewModel
+@{
+    ViewData["Title"] = "Bracket Show - " + Model.Featured.Title;
 }
 <div class="row center-block text-center">
     <div class="col-md-9 col-xs-12" style="margin-top: 20px;">
         <div class="col-md-12 col-xs-12">
             <div class="videoWrapper">
-                <iframe src="https://www.youtube.com/embed/2wgFQCulPPA" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/@Model.Featured.YouTubeId" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="col-md-12 col-xs-12">
-                <div class="col-md-12 col-xs-12">
-                    <h1>Bien démarrer</h1>
-                </div>
-                <div class="col-md-3 col-xs-6">
-                    <div class="videoWrapper">
-                        <iframe src="https://www.youtube.com/embed/-XqZGH_XeoI" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-xs-12">
-                <div class="col-md-12 col-xs-12">
-                    <h1>Les patrons de conception</h1>
-                </div>
-                <div class="col-md-3 col-xs-6">
-                    <div class="videoWrapper">
-                        <iframe src="https://www.youtube.com/embed/s1lztsgZk4c" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-6">
-                    <div class="videoWrapper">
-                        <iframe src="https://www.youtube.com/embed/WghYGmUd9nQ" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-xs-12">
-                <div class="col-md-12 col-xs-12">
-                    <h1>Trucs et astuces</h1>
-                </div>
-                <div class="col-md-3 col-xs-6">
-                    <div class="videoWrapper">
-                        <iframe src="https://www.youtube.com/embed/V-N7xCobGnU" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-xs-12">
-                <div class="col-md-12 col-xs-12">
-                    <h1>Les bonnes pratiques</h1>
-                </div>
-                <div class="col-md-3 col-xs-6">
-                    <div class="videoWrapper">
-                        <iframe src="https://www.youtube.com/embed/2wgFQCulPPA" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
+
+            @Html.DisplayFor(m => m.Series)
+
         </div>
     </div>
     <div class="col-md-3 col-xs-12">
