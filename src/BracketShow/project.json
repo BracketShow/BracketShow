@@ -28,6 +28,7 @@
       "type": "build"
     },
     "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0",
+    "Microsoft.Extensions.Configuration.Abstractions": "1.0.0",
     "Microsoft.Extensions.Configuration.Json": "1.0.0",
     "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0",
     "Microsoft.Extensions.Logging": "1.0.0",
@@ -43,7 +44,9 @@
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
-    "Google.Apis.YouTube.v3": "1.17.0.582"
+    "Google.Apis.YouTube.v3": "1.17.0.582",
+    "Microsoft.ApplicationInsights.AspNetCore": "2.0.0",
+    "Microsoft.ApplicationInsights.Web": "2.2.0"
   },
 
   "tools": {
@@ -63,7 +66,7 @@
   "frameworks": {
     "netcoreapp1.0": {
       "imports": [
-        "dotnet5.6",
+        "dnxcore50",
         "portable-net45+win8"
       ]
     }
@@ -71,7 +74,8 @@
 
   "buildOptions": {
     "emitEntryPoint": true,
-    "preserveCompilationContext": true
+    "preserveCompilationContext": true,
+    "optimize": true
   },
 
   "runtimeOptions": {

@@ -28,6 +28,7 @@ namespace BracketShow
             {
                 // For more details on using the user secret store see http://go.microsoft.com/fwlink/?LinkID=532709
                 builder.AddUserSecrets();
+                builder.AddApplicationInsightsSettings(developerMode: true);
             }
 
             builder.AddEnvironmentVariables();
@@ -47,7 +48,7 @@ namespace BracketShow
             //services.AddIdentity<ApplicationUser, IdentityRole>()
             //    .AddEntityFrameworkStores<ApplicationDbContext>()
             //    .AddDefaultTokenProviders();
-
+            services.AddApplicationInsightsTelemetry("32fb2345-ca7d-4bb7-9c4a-5506a51fec57");
             services.AddMvc();
 
             // Add application services.
