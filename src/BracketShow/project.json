@@ -45,8 +45,7 @@
       "type": "build"
     },
     "Google.Apis.YouTube.v3": "1.17.0.582",
-    "Microsoft.ApplicationInsights.AspNetCore": "2.0.0",
-    "Microsoft.ApplicationInsights.Web": "2.2.0"
+    "Microsoft.ApplicationInsights.AspNetCore": "2.0.0"
   },
 
   "tools": {
