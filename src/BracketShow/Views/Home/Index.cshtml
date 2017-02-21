@@ -1,6 +1,6 @@
 ﻿@model Models.HomeViewModels.IndexViewModel
 @{
-    ViewData["Title"] = "Bracket Show - " + @(Model.FeaturedVideoSelected ? Model.Featured.Title : "Encapsuler le savoir")
+    ViewData["Title"] = "Bracket Show - " + (Model.FeaturedVideoSelected ? Model.Featured.Title : "Encapsuler le savoir");
     
 }
 <div class="row center-block text-center">
