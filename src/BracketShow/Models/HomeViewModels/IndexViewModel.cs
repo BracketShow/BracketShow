@@ -32,6 +32,8 @@ namespace Models.HomeViewModels
             }
         }
 
+        public bool FeaturedVideoSelected => _id != null;
+
         public IEnumerable<SerieViewModel> Series
         {
             get
