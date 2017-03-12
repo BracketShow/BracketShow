@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "Title": "E00 - Introduction",
     "Category": "Bien démarrer",
@@ -46,5 +46,17 @@
     "Category": "Les Entrevues",
     "YouTubeUrl": "https://www.youtube.com/watch?v=n4FeEybzixw",
     "PublishDate": "2017-02-13T06:00:00"
-  } 
+  },
+  {
+    "Title": "E08 - Le Composite",
+    "Category": "Patrons de conception",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=25nonh-W5po",
+    "PublishDate": "2017-02-27T06:00:00"
+  },
+  {
+    "Title": "E09 - Le Singleton",
+    "Category": "Patrons de conception",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=MtJ2TnZ-WPY",
+    "PublishDate": "2017-03-13T06:00:00"
+  }  
 ]
