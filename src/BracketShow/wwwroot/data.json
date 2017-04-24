@@ -43,7 +43,7 @@
   },
   {
     "Title": "E07 - Protractor",
-    "Category": "Les Entrevues",
+    "Category": "Les outils",
     "YouTubeUrl": "https://www.youtube.com/watch?v=n4FeEybzixw",
     "PublishDate": "2017-02-13T06:00:00"
   },
@@ -70,5 +70,11 @@
     "Category": "Les outils",
     "YouTubeUrl": "https://www.youtube.com/watch?v=YgeVjxI4zCY",
     "PublishDate": "2017-04-10T06:00:00"
+  },
+  {
+    "Title": "E12 - Visual Studio 2017",
+    "Category": "Les outils",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=2QEGSuO72Sc",
+    "PublishDate": "2017-04-24T06:00:00"
   }
 ]
