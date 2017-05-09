@@ -50,6 +50,7 @@ demnade d'avoir le SDK de .NET Core d'installé si vous voulez ouvrir le projet.
  
 ## Trucs et astuces
  - [DebuggerDisplay](https://www.youtube.com/watch?v=V-N7xCobGnU)
+ - Lambdas
  
 ## Événements
 - Agile Tour
