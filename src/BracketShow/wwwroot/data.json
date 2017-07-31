@@ -100,5 +100,11 @@
     "Category": "Trucs et astuces",
     "YouTubeUrl": "https://www.youtube.com/watch?v=bX5qwTHxIAA",
     "PublishDate": "2017-07-17T06:00:00"
+  },
+  {
+    "Title": "E17 - MediatR",
+    "Category": "Les outils",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=Jov-7Xygtyo",
+    "PublishDate": "2017-07-31T06:00:00"
   }
 ]
