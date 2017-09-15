@@ -1,8 +1,17 @@
-﻿@model Models.HomeViewModels.IndexViewModel
+﻿@using Microsoft.AspNetCore.Http
+@model Models.HomeViewModels.IndexViewModel
 @{
     ViewData["Title"] = "Bracket Show - " + (Model.FeaturedVideoSelected ? Model.Featured.Title : "Encapsuler le savoir");
     
 }
+
+@section metatags
+{
+    <meta name="og:title" content="@Model.Featured.Title" />
+    <meta name="og:url" content="http://bracketshow.com/?id=@Model.Featured.YouTubeId" />
+    <meta name="og:image" content="http://img.youtube.com/vi/@Model.Featured.YouTubeId/0.jpg" />
+}
+
 <div class="row center-block text-center">
     <div class="col-md-9 col-xs-12" style="margin-top: 20px;">
         <div class="col-md-12 col-xs-12">
