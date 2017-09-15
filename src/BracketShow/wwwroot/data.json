@@ -15,97 +15,113 @@
     "Title": "E02 - Le décorateur",
     "Category": "Patrons de conception",
     "YouTubeUrl": "https://www.youtube.com/watch?v=WghYGmUd9nQ",
-    "PublishDate": "2016-12-03T06:00:00"
+    "PublishDate": "2016-12-03T06:00:00",
+    "Image": "https://sec.ch9.ms/ch9/64fc/0843599b-79a4-485d-bb1c-a0d82f3764fc/BracketShowEpisode2Decorateur_960.jpg"
   },
   {
     "Title": "E03 - L'attribut DebuggerDisplay",
     "Category": "Trucs et astuces",
     "YouTubeUrl": "https://www.youtube.com/watch?v=V-N7xCobGnU",
-    "PublishDate": "2016-11-02T06:00:00"
+    "PublishDate": "2016-11-02T06:00:00",
+    "Image": "https://sec.ch9.ms/ch9/ad2d/9ec2633d-d4bd-4d11-bf52-a4317ddaad2d/TrucEtAstuceDebuggerDisplayAttribute_960.jpg"
   },
   {
     "Title": "E04 - Le Factory",
     "Category": "Patrons de conception",
     "YouTubeUrl": "https://www.youtube.com/watch?v=s1lztsgZk4c",
-    "PublishDate": "2016-12-11T06:00:00"
+    "PublishDate": "2016-12-11T06:00:00",
+    "Image": "https://sec.ch9.ms/ch9/1aac/d0ebac44-418e-48ec-a89b-d318b5841aac/BracketShowFactoryPattern_960.jpg"
   },
   {
     "Title": "E05 - Clean code partie 1",
     "Category": "Bonnes pratiques",
     "YouTubeUrl": "https://www.youtube.com/watch?v=2wgFQCulPPA",
-    "PublishDate": "2017-01-14T06:00:00"
+    "PublishDate": "2017-01-14T06:00:00",
+    "Image": "https://sec.ch9.ms/ch9/3af1/579b9c20-b908-4a02-9f57-4bee89423af1/BonnesPratiquesCleanodeBracketShowEpisode5_960.jpg"
   },
   {
     "Title": "E06 - Clean code partie 2",
     "Category": "Bonnes pratiques",
     "YouTubeUrl": "https://www.youtube.com/watch?v=-XRaFIFczL8",
-    "PublishDate": "2017-01-30T06:00:00"
+    "PublishDate": "2017-01-30T06:00:00",
+    "Image": "https://sec.ch9.ms/ch9/2e17/645411be-3ca8-410d-918b-54037b7e2e17/BracketShowEpisode6BonnesPratiquesCleanCode2_960.jpg"
   },
   {
     "Title": "E07 - Protractor",
     "Category": "Les outils",
     "YouTubeUrl": "https://www.youtube.com/watch?v=n4FeEybzixw",
-    "PublishDate": "2017-02-13T06:00:00"
+    "PublishDate": "2017-02-13T06:00:00",
+    "Image": "https://sec.ch9.ms/ch9/7330/04b78e7b-9703-4f2b-b520-30a30c397330/BracketShowEpisode7LesEntrevuesProtractor_960.jpg"
   },
   {
     "Title": "E08 - Le Composite",
     "Category": "Patrons de conception",
     "YouTubeUrl": "https://www.youtube.com/watch?v=25nonh-W5po",
-    "PublishDate": "2017-02-27T06:00:00"
+    "PublishDate": "2017-02-27T06:00:00",
+    "Image": "https://sec.ch9.ms/ch9/4c72/6220e1d5-ee99-411b-86f5-2666bcf84c72/BracketShow8CompositePattern_960.jpg"
   },
   {
     "Title": "E09 - Le Singleton",
     "Category": "Patrons de conception",
     "YouTubeUrl": "https://www.youtube.com/watch?v=MtJ2TnZ-WPY",
-    "PublishDate": "2017-03-13T06:00:00"
+    "PublishDate": "2017-03-13T06:00:00",
+    "Image": "https://sec.ch9.ms/ch9/5f97/81c5fb48-c1eb-4cd9-9b44-051e3e185f97/BracketShowEpisode9Singleton_960.jpg"
   },
   {
     "Title": "E10 - Nouveauté C# 7.0 partie 1",
     "Category": "Les outils",
     "YouTubeUrl": "https://www.youtube.com/watch?v=2LhU3k44kJY",
-    "PublishDate": "2017-03-27T06:00:00"
+    "PublishDate": "2017-03-27T06:00:00",
+    "Image": "https://f.ch9.ms/thumbnail/fbc71797-40c2-43de-b927-c8316b4fbba9.png"
   },
   {
     "Title": "E11 - Nouveauté C# 7.0 partie 2",
     "Category": "Les outils",
     "YouTubeUrl": "https://www.youtube.com/watch?v=YgeVjxI4zCY",
-    "PublishDate": "2017-04-10T06:00:00"
+    "PublishDate": "2017-04-10T06:00:00",
+    "Image": "https://f.ch9.ms/thumbnail/aca01b13-0efe-40fd-b003-66d06f371f51.png"
   },
   {
     "Title": "E12 - Visual Studio 2017",
     "Category": "Les outils",
     "YouTubeUrl": "https://www.youtube.com/watch?v=2QEGSuO72Sc",
-    "PublishDate": "2017-04-24T06:00:00"
+    "PublishDate": "2017-04-24T06:00:00",
+    "Image": "https://sec.ch9.ms/ch9/ca21/b15bfbe4-408a-4587-9765-4afccad0ca21/BracketShowEpisode12VisualStudio2017_960.jpg"
   },
   {
     "Title": "E13 - Visual Studio Team System 2017 partie 1",
     "Category": "Les outils",
     "YouTubeUrl": "https://www.youtube.com/watch?v=duujOocS-hA",
-    "PublishDate": "2017-05-08T06:00:00"
+    "PublishDate": "2017-05-08T06:00:00",
+    "Image": "https://sec.ch9.ms/ch9/b4fa/16492136-d58f-45b7-961e-2e8e9ee1b4fa/BracketSHowEpisoe13VisualStudioTeamSustem2017part_960.jpg"
   },
   {
     "Title": "E14 - Visual Studio Team System 2017 partie 2",
     "Category": "Les outils",
     "YouTubeUrl": "https://www.youtube.com/watch?v=ip40u3kZUJs",
-    "PublishDate": "2017-05-22T06:00:00"
+    "PublishDate": "2017-05-22T06:00:00",
+    "Image": "https://sec.ch9.ms/ch9/b4fa/16492136-d58f-45b7-961e-2e8e9ee1b4fa/BracketSHowEpisoe13VisualStudioTeamSustem2017part_960.jpg"
   },
   {
     "Title": "E15 - Les MVC Templates",
     "Category": "Trucs et astuces",
     "YouTubeUrl": "https://www.youtube.com/watch?v=BcuNWxJWZ08",
-    "PublishDate": "2017-06-05T06:00:00"
+    "PublishDate": "2017-06-05T06:00:00",
+    "Image": "https://sec.ch9.ms/ch9/50a1/55b744d8-b0df-48bc-b409-105f2dbb50a1/BracketShowEpisode15MvcTemplates_960.jpg"
   },
   {
     "Title": "E16 - Les Méthodes d'extensions",
     "Category": "Trucs et astuces",
     "YouTubeUrl": "https://www.youtube.com/watch?v=bX5qwTHxIAA",
-    "PublishDate": "2017-07-17T06:00:00"
+    "PublishDate": "2017-07-17T06:00:00",
+    "Image": "https://sec.ch9.ms/ch9/6fa2/f67f9971-e669-4cbe-b059-a917175d6fa2/BracketShowEpisode16eLesMethodeDExtentions_960.jpg"
   },
   {
     "Title": "E17 - MediatR",
     "Category": "Les outils",
     "YouTubeUrl": "https://www.youtube.com/watch?v=Jov-7Xygtyo",
-    "PublishDate": "2017-07-31T06:00:00"
+    "PublishDate": "2017-07-31T06:00:00",
+    "Image": "https://f.ch9.ms/thumbnail/3e39997c-ee76-467a-bd06-de619178c21e.png"
   },
   {
     "Title": "E18 - Dynamics 365 (CRM)",
