@@ -22,31 +22,31 @@ demnade d'avoir le SDK de .NET Core d'installé si vous voulez ouvrir le projet.
 
 ### Série Design patterns
 - Creational Patterns
- - Abstract Factory
- - Builder
- - [Factory Method](https://www.youtube.com/watch?v=s1lztsgZk4c)
- - Prototype
- - Singleton
+  - Abstract Factory
+  - Builder
+  - [Factory Method](https://www.youtube.com/watch?v=s1lztsgZk4c)
+  - Prototype
+  - [Singleton](https://www.youtube.com/watch?v=MtJ2TnZ-WPY)
 - Structural Patterns
- - Adapter
- - Bridge
- - Composite
- - [Decorator](https://www.youtube.com/watch?v=WghYGmUd9nQ&t=1s)
- - Facade
- - Flyweight
- - Proxy
+  - Adapter
+  - Bridge
+  - [Composite](https://www.youtube.com/watch?v=25nonh-W5po)
+  - [Decorator](https://www.youtube.com/watch?v=WghYGmUd9nQ&t=1s)
+  - Facade
+  - Flyweight
+  - Proxy
 - Behavioral Patterns
- - Chain of Responsibility
- - Command
- - Interpreter
- - Iterator
- - Mediator
- - Memento
- - Observer
- - State
- - Strategy
- - Template Method
- - Visitor
+  - Chain of Responsibility
+  - Command
+  - Interpreter
+  - Iterator
+  - Mediator
+  - Memento
+  - Observer
+  - State
+  - Strategy
+  - Template Method
+  - Visitor
  
 ## Trucs et astuces
  - [DebuggerDisplay](https://www.youtube.com/watch?v=V-N7xCobGnU)
@@ -61,7 +61,8 @@ demnade d'avoir le SDK de .NET Core d'installé si vous voulez ouvrir le projet.
 ## Bonnes pratiques
 - TDD
 - BDD
-- Clean Code
+- [Clean Code 1](https://www.youtube.com/watch?v=2wgFQCulPPA)
+- [Clean Code 2](https://www.youtube.com/watch?v=-XRaFIFczL8)
 - Refactoring
 
 ## Architecture 
@@ -72,11 +73,20 @@ demnade d'avoir le SDK de .NET Core d'installé si vous voulez ouvrir le projet.
 - Cloud
 
 ## Outils
-- Resharper
+- [C# 7.0 Partie 1](https://www.youtube.com/watch?v=2LhU3k44kJY)
+- [C# 7.0 Partie 2](https://www.youtube.com/watch?v=YgeVjxI4zCY)
+- [Visual Studio 2017](https://www.youtube.com/watch?v=2QEGSuO72Sc)
+- [Visual Studio Team Services 2017 Partie 1](https://www.youtube.com/watch?v=duujOocS-hA)
+- [Visual Studio Team Services 2017 Partie 2](https://www.youtube.com/watch?v=ip40u3kZUJs)
+- [MVC Templates](https://www.youtube.com/watch?v=BcuNWxJWZ08)
+- [Methode d'extensions](https://www.youtube.com/watch?v=bX5qwTHxIAA)
+- [MediatR](https://www.youtube.com/watch?v=Jov-7Xygtyo)
+- [Dynamics 365 pour les d/veloppeurs](https://www.youtube.com/watch?v=YxWy4cEsonc)
 - FluentAssertions
 - NUnit
 - LinqPad
 - BDDfy
+- [Protractor](https://www.youtube.com/watch?v=n4FeEybzixw)
 
 ## Autres
 - Enterprise Patterns
