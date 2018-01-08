@@ -143,5 +143,17 @@
     "YouTubeUrl": "https://www.youtube.com/watch?v=_Y6rZdFO-sU",
     "PublishDate": "2017-10-24T06:00:00",
     "Image": "https://sec.ch9.ms/ch9/58f5/7ee52eeb-d3cf-47d8-b1ff-15ed523658f5/BracketShowEpisode19Unity3Part1_512.jpg"
+  },
+  {
+    "Title": "E21 - .NET Standard 2",
+    "Category": "Les outils",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=8jAf-LRV3Cw",
+    "PublishDate": "2017-11-06T06:00:00"
+  },
+  {
+    "Title": "E21 - Le Builder",
+    "Category": "Les outils",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=y8KV3fW6BYo",
+    "PublishDate": "2018-01-08T06:00:00"
   }
 ]
