@@ -151,9 +151,15 @@
     "PublishDate": "2017-11-06T06:00:00"
   },
   {
-    "Title": "E21 - Le Builder",
+    "Title": "E22 - Le Builder",
     "Category": "Les outils",
     "YouTubeUrl": "https://www.youtube.com/watch?v=y8KV3fW6BYo",
     "PublishDate": "2018-01-08T06:00:00"
+  },
+  {
+    "Title": "E23 - Blockchain",
+    "Category": "Les outils",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=fBhNfTvraeA",
+    "PublishDate": "2018-01-29T06:00:00"
   }
 ]
