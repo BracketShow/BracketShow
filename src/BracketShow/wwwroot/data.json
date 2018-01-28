@@ -152,13 +152,13 @@
   },
   {
     "Title": "E22 - Le Builder",
-    "Category": "Les outils",
+    "Category": "Patrons de conception",
     "YouTubeUrl": "https://www.youtube.com/watch?v=y8KV3fW6BYo",
     "PublishDate": "2018-01-08T06:00:00"
   },
   {
     "Title": "E23 - Blockchain",
-    "Category": "Les outils",
+    "Category": "Bien démarrer",
     "YouTubeUrl": "https://www.youtube.com/watch?v=fBhNfTvraeA",
     "PublishDate": "2018-01-29T06:00:00"
   }
