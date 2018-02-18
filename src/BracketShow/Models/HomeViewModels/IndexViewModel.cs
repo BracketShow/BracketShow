@@ -26,7 +26,9 @@ namespace Models.HomeViewModels
                 VideoViewModel videoToShow = null;
                 if (_id != null) videoToShow = _videos.FirstOrDefault(v => v.YouTubeId == _id);
                 return videoToShow ?? (from video in _videos
+#if DEBUG
                            where video.PublishDate <= DateTime.Now
+#endif                             
                            orderby video.PublishDate descending
                            select video).First();
             }
