@@ -173,5 +173,35 @@
     "Category": "Les outils",
     "YouTubeUrl": "https://www.youtube.com/watch?v=rBSrgT8YCZ4",
     "PublishDate": "2018-02-26T06:00:00"
+  },
+  {
+    "Title": "E26 - Mocking",
+    "Category": "Bonnes pratiques",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=BsvO6RVMMbg",
+    "PublishDate": "2018-03-12T06:00:00"
+  },
+  {
+    "Title": "E27 - Tester en production",
+    "Category": "Bonnes pratiques",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=EQ3YkXJt4bE",
+    "PublishDate": "2018-03-26T06:00:00"
+  },
+  {
+    "Title": "E28 - Solution Explorer Scope",
+    "Category": "Trucs et astuces",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=_dhCZKdL6cI",
+    "PublishDate": "2018-04-30T06:00:00"
+  },
+  {
+    "Title": "E29 - .NET Core localisation",
+    "Category": "Les outils",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=NGNGbFHwu1g",
+    "PublishDate": "2018-05-15T06:00:00"
+  },
+  {
+    "Title": "E30 - Extension Visual Studio",
+    "Category": "Les outils",
+    "YouTubeUrl": "https://www.youtube.com/watch?v=8djepHQ-RH4",
+    "PublishDate": "2018-06-04T06:00:00"
   }
 ]

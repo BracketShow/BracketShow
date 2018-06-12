@@ -23,7 +23,7 @@ demnade d'avoir le SDK de .NET Core d'installé si vous voulez ouvrir le projet.
 ### Série Design patterns
 - Creational Patterns
   - Abstract Factory
-  - Builder
+  - [Builder](https://www.youtube.com/watch?v=y8KV3fW6BYo)
   - [Factory Method](https://www.youtube.com/watch?v=s1lztsgZk4c)
   - Prototype
   - [Singleton](https://www.youtube.com/watch?v=MtJ2TnZ-WPY)
@@ -81,12 +81,15 @@ demnade d'avoir le SDK de .NET Core d'installé si vous voulez ouvrir le projet.
 - [MVC Templates](https://www.youtube.com/watch?v=BcuNWxJWZ08)
 - [Methode d'extensions](https://www.youtube.com/watch?v=bX5qwTHxIAA)
 - [MediatR](https://www.youtube.com/watch?v=Jov-7Xygtyo)
-- [Dynamics 365 pour les d/veloppeurs](https://www.youtube.com/watch?v=YxWy4cEsonc)
+- [Dynamics 365 pour les développeurs](https://www.youtube.com/watch?v=YxWy4cEsonc)
 - FluentAssertions
 - NUnit
 - LinqPad
 - BDDfy
 - [Protractor](https://www.youtube.com/watch?v=n4FeEybzixw)
+- [.NET Standard 2](https://www.youtube.com/watch?v=8jAf-LRV3Cw)
+- [Unity 3D Partie 1](https://www.youtube.com/watch?v=T5dyqGAONhg&t=190s)
+- [Unity 3D Partie 2](https://www.youtube.com/watch?v=_Y6rZdFO-sU&t=633s)
 
 ## Autres
 - Enterprise Patterns
@@ -104,6 +107,6 @@ demnade d'avoir le SDK de .NET Core d'installé si vous voulez ouvrir le projet.
 - MVP Patterns
 - MVVM Patterns
 - Active Record, CQRS
-- Testing and Mocking
+- [Testing](https://www.youtube.com/watch?v=rBSrgT8YCZ4) and Mocking
 - Architectural Guidance
 - Aspect Programming
