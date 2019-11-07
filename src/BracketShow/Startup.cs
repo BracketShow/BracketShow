@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -12,6 +13,7 @@ using Microsoft.Extensions.Logging;
 //using BracketShow.Data;
 using BracketShow.Models;
 using BracketShow.Services;
+using Microsoft.AspNetCore.Rewrite;
 
 namespace BracketShow
 {
@@ -27,7 +29,7 @@ namespace BracketShow
             if (env.IsDevelopment())
             {
                 // For more details on using the user secret store see http://go.microsoft.com/fwlink/?LinkID=532709
-                builder.AddUserSecrets();
+                //builder.AddUserSecrets();
                 builder.AddApplicationInsightsSettings(developerMode: true);
             }
 
@@ -57,10 +59,10 @@ namespace BracketShow
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
-            loggerFactory.AddDebug();
+            //app.UseRewriter(new RewriteOptions()
+            //    .AddRedirect(@"^(.*)", "https://www.facebook.com/Bracket-Show-111487076933290/", (int)HttpStatusCode.Redirect));
 
             if (env.IsDevelopment())
             {
