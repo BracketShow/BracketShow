@@ -27,8 +27,18 @@ app {
     align-items: center;
 }
 
+.footer-row {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
 .main {
     flex: 1;
+    flex-direction: column;
+    display: flex;
+    min-height: 100%;
 }
 
     .main .top-row {
@@ -100,6 +110,8 @@ app {
 
 .content {
     padding-top: 1.1rem;
+    flex: 1;
+    padding: 20px;
 }
 
 .navbar-toggler {
