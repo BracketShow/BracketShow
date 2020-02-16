@@ -1,24 +1,36 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>BracketShow</title>
+    <title>Bracket Show - Encapsuler le savoir</title>
     <base href="/" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/site.css" rel="stylesheet" />
 </head>
 
 <body>
-    <app>Loading...</app>
+    <app>Compilation en cours... Cette initiative est compilée par Done.</app>
 
     <div id="blazor-error-ui">
         An unhandled error has occurred.
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
-    <script src="_framework/blazor.webassembly.js"></script>
+<script src="_framework/blazor.webassembly.js"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
+<script>
+    function renderYtSubscribeButton() {
+        var container = document.getElementById('yt-button-container-render');
+        var options = {
+            'channelid': 'UCtnYlMKv9vbV6EITjrCwr1g',
+            'layout': 'full',
+            'count': 'default'
+        };
+        gapi.ytsubscribe.render(container, options);
+    }
+</script>
 </body>
 
 </html>

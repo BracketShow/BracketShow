@@ -1,5 +1,5 @@
 ﻿<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">BracketShow</a>
+    <a class="navbar-brand" href="">Bracket Show</a>
     <button class="navbar-toggler" @onclick="ToggleNavMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,7 +12,7 @@
                 <span class="oi oi-home" aria-hidden="true"></span> Home
             </NavLink>
         </li>
-        <li class="nav-item px-3">
+        @*<li class="nav-item px-3">
             <NavLink class="nav-link" href="counter">
                 <span class="oi oi-plus" aria-hidden="true"></span> Counter
             </NavLink>
@@ -21,17 +21,41 @@
             <NavLink class="nav-link" href="fetchdata">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
             </NavLink>
+        </li>*@
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="contact" @onclick="ToggleContactSubMenu">
+                <span class="oi oi-envelope-open" aria-hidden="true"></span> Contact
+            </NavLink>
+        </li>
+        @if (expendContactSubMenus)
+        {
+            @*<li class="nav-item px-3">
+                <NavLink class="nav-link" href="contact" @onclick="()=>expendContactSubMenus = !expendContactSubMenus">
+                    <span class="oi oi-envelope-open" aria-hidden="true"></span> Contact
+                </NavLink>
+            </li>*@
+        }
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="about">
+                <span class="oi oi-question-mark" aria-hidden="true"></span> À propos
+            </NavLink>
         </li>
     </ul>
 </div>
 
 @code {
     private bool collapseNavMenu = true;
+    private bool expendContactSubMenus = false;
 
     private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+    }
+
+    private void ToggleContactSubMenu()
+    {
+        expendContactSubMenus = !expendContactSubMenus;
     }
 }
