@@ -41,26 +41,32 @@
 </head>
 
 <body>
-    <app>Compilation en cours... Cette initiative est compilée par Done.</app>
+    <app>Compilation en cours... Cette initiative est compilée par done.</app>
 
     <div id="blazor-error-ui">
         An unhandled error has occurred.
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
-    </div>
-<script src="_framework/blazor.webassembly.js"></script>
-<script src="https://apis.google.com/js/platform.js"></script>
-<script>
-    function renderYtSubscribeButton() {
-        var container = document.getElementById('yt-button-container-render');
-        var options = {
-            'channelid': 'UCtnYlMKv9vbV6EITjrCwr1g',
-            'layout': 'full',
-            'count': 'default'
-        };
-        gapi.ytsubscribe.render(container, options);
-    }
-</script>
+</div>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=117484054999543&autoLogAppEvents=1"></script>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script>
+        function renderYtSubscribeButton() {
+            var container = document.getElementById('yt-button-container-render');
+            var options = {
+                'channelid': 'UCtnYlMKv9vbV6EITjrCwr1g',
+                'layout': 'full',
+                'count': 'default'
+            };
+            gapi.ytsubscribe.render(container, options);
+        }
+
+        function reloadFb() {
+            FB.XFBML.parse();
+        }
+    </script>
 </body>
 
 </html>

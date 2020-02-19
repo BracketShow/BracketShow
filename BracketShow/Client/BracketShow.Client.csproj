@@ -14,5 +14,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Shared\BracketShow.Shared.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\videos\" />
+  </ItemGroup>
 
 </Project>
