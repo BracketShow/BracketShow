@@ -1,58 +1,54 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">Bracket Show</a>
-    <button class="navbar-toggler" @onclick="ToggleNavMenu">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-</div>
+﻿<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container">
+        <a class="navbar-brand" href="">blazornav</a>
+        <button class="navbar-toggler" type="button" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item px-3">
+                    <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                        <span class="oi oi-home" aria-hidden="true"></span> Home
+                    </NavLink>
+                </li>
+                <li class="nav-item px-3">
+                    <NavLink class="nav-link" href="contact" @onclick="ToggleContactSubMenu">
+                        <span class="oi oi-envelope-open" aria-hidden="true"></span> Contact
+                    </NavLink>
+                </li>
+                @if (expendContactSubMenus)
+                {
+                    @*<li class="nav-item px-3">
+                        <NavLink class="nav-link" href="contact" @onclick="()=>expendContactSubMenus = !expendContactSubMenus">
+                            <span class="oi oi-envelope-open" aria-hidden="true"></span> Contact
+                        </NavLink>
+                    </li>*@
+                }
+                <li class="nav-item px-3">
+                    <NavLink class="nav-link" href="about">
+                        <span class="oi oi-question-mark" aria-hidden="true"></span> À propos
+                    </NavLink>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <ul class="nav flex-column">
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </li>
-        @*<li class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
-        </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
-            </NavLink>
-        </li>*@
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="contact" @onclick="ToggleContactSubMenu">
-                <span class="oi oi-envelope-open" aria-hidden="true"></span> Contact
-            </NavLink>
-        </li>
-        @if (expendContactSubMenus)
-        {
-            @*<li class="nav-item px-3">
-                <NavLink class="nav-link" href="contact" @onclick="()=>expendContactSubMenus = !expendContactSubMenus">
-                    <span class="oi oi-envelope-open" aria-hidden="true"></span> Contact
-                </NavLink>
-            </li>*@
-        }
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="about">
-                <span class="oi oi-question-mark" aria-hidden="true"></span> À propos
-            </NavLink>
-        </li>
-    </ul>
-</div>
+
 
 @code {
     private bool collapseNavMenu = true;
     private bool expendContactSubMenus = false;
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    string baseMenuClass = "navbar-collapse d-sm-inline-flex flex-sm-row-reverse";
 
-    private void ToggleNavMenu()
+    string NavMenuCssClass => baseMenuClass + (collapseNavMenu ? " collapse" : "");
+
+    void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
     }
+
 
     private void ToggleContactSubMenu()
     {
