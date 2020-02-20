@@ -1,1 +1,56 @@
 ﻿@page "/"
+@inject IJSRuntime JSRuntime
+
+<HomeSection></HomeSection>
+
+<LatestVideoSection></LatestVideoSection>
+
+<MediaSection></MediaSection>
+
+<ColumnSection></ColumnSection>
+
+@*<GridSection></GridSection>
+
+<CarouselSection></CarouselSection>
+
+<NestedSection></NestedSection>
+
+<IconSection></IconSection>
+
+<FloaterSection></FloaterSection>
+
+<CardsSection></CardsSection>
+
+<FooterSection></FooterSection>
+
+<Modal></Modal>*@
+
+<div class="fb-page" data-href="https://www.facebook.com/BracketShow/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/BracketShow/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BracketShow/">Bracket Show</a></blockquote></div>
+
+<!-- The video -->
+@*<div>
+        <video autoplay muted loop id="myVideo">
+            <source src="videos/BracketShowteaser15sec.mp4" type="video/mp4">
+        </video>
+    </div>*@
+
+<!-- Optional: some overlay text to describe the video -->
+@*<div class="videocontent">
+        <h1>Heading</h1>
+        <p>Lorem ipsum...</p>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>*@
+
+@code{
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("highlightMenu");
+            await JSRuntime.InvokeVoidAsync("reloadFb", null);
+            StateHasChanged();
+        }
+
+    }
+}

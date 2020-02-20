@@ -1,0 +1,54 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime JSRuntime
+
+
+
+    <div class="main">
+        <header>
+            <NavMenu />
+        </header>
+
+        <div class="container px-4">
+            @Body
+        </div>
+
+        @*<footer class="footer-row">
+            <div class="container">
+                <p>&copy; 2016 - Le Bracket Show</p>
+            </div>
+        </footer>*@
+
+        @*<div class="top-row px-4">
+            <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
+
+            <div class="sidebar">
+                <NavMenu />
+            </div>
+
+            <div style="margin-top: 5px; min-height: 60px; text-align: right;">
+                <span style="font-size: x-large;">Inscrivez-vous à notre chaine </span>
+                <div id="yt-button-container-render" style="display:inline"></div>
+            </div>
+        </div>
+
+        <div class="content px-4">
+            @Body
+        </div>*@
+
+
+    </div>
+
+
+
+@code{
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("renderYtSubscribeButton", null);
+            StateHasChanged();
+        }
+
+    }
+}
