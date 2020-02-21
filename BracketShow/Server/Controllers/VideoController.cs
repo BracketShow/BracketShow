@@ -40,5 +40,15 @@ namespace BracketShow.Server.Controllers
                 Title = p.Title
             });
         }
+
+        [HttpGet]
+        public async Task<IEnumerable<VideoInformation>> GetPlaylistVideos(string playlistId)
+        {
+            var videos = await videoRetrieverService.GetPlaylistVideos(playlistId);
+            return videos.Select(v => new VideoInformation
+            {
+                Id = v.Id
+            });
+        }
     }
 }

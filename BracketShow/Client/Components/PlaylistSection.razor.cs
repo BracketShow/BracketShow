@@ -2,11 +2,14 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
 using BracketShow.Shared;
+using System.Collections.Generic;
 
 namespace BracketShow.Client.Components
 {
     public partial class PlaylistSection
     {
+        private VideoInformation[] videos;
+
         [Parameter]
         public PlaylistInformation PlaylistInformation { get; set; }
 
@@ -15,7 +18,7 @@ namespace BracketShow.Client.Components
 
         protected override async Task OnInitializedAsync()
         {
-            //latestVideo = await Http.GetJsonAsync<VideoInformation>("video/GetLatestVideo");
+            videos = await Http.GetJsonAsync<VideoInformation[]>($"api/video/GetPlaylistVideos?playlistId={PlaylistInformation.Id}");
         }
     }
 }

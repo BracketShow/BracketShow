@@ -55,5 +55,31 @@ namespace BracketShow.Youtube
                 Id = latestResponse.Items[0].Id.VideoId
             };
         }
+
+        public async Task<IEnumerable<VideoInformation>> GetPlaylistVideos(string playlistId)
+        {
+            var videos = new List<VideoInformation>();
+
+            var nextPageToken = "";
+            while (nextPageToken != null)
+            {
+                var request = youtubeService.PlaylistItems.List("id,snippet");
+                request.PlaylistId = playlistId;
+                request.MaxResults = 50;
+                request.PageToken = nextPageToken;
+
+                var playlistItemsListResponse = await request.ExecuteAsync();
+                foreach (var playlistItem in playlistItemsListResponse.Items)
+                {
+                    videos.Add(new VideoInformation
+                    {
+                        Id = playlistItem.Snippet.ResourceId.VideoId
+                    });
+                }
+                nextPageToken = playlistItemsListResponse.NextPageToken;
+            }
+
+            return videos;
+        }
     }
 }

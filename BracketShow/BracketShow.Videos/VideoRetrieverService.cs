@@ -7,6 +7,32 @@ using System.Threading.Tasks;
 
 namespace BracketShow.Videos
 {
+    //internal class VideoRetrieverCachedService : IVideoRetrieverService
+    //{
+    //    private readonly IAppCache appCache;
+    //    private readonly IVideoRetrieverService service;
+
+    //    public VideoRetrieverCachedService(IAppCache appCache, IVideoRetrieverService service)
+    //    {
+    //        this.appCache = appCache;
+    //        this.service = service;
+    //    }
+    //    public Task<IEnumerable<PlaylistInformation>> GetChannelPlaylists()
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public Task<VideoInformation> GetLatestChannelVideo()
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public Task<IEnumerable<VideoInformation>> GetPlaylistVideos(string playlistId)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+    //}
+
     internal class VideoRetrieverService : IVideoRetrieverService
     {
         private readonly IVideoRetriever videoRetriever;
@@ -20,29 +46,33 @@ namespace BracketShow.Videos
 
         public async Task<IEnumerable<PlaylistInformation>> GetChannelPlaylists()
         {            
-            var channelPlaylists = await appCache.GetOrAddAsync("channelPlaylists", () => PopulateChannelPlaylistsCache(), DateTimeOffset.Now.AddHours(8));
-            return channelPlaylists;
+            return await appCache.GetOrAddAsync("channelPlaylists", () => PopulateChannelPlaylistsCache(), DateTimeOffset.Now.AddHours(8));
 
             async Task<IEnumerable<PlaylistInformation>> PopulateChannelPlaylistsCache()
             {
-                IEnumerable<PlaylistInformation> playlists = await videoRetriever.GetChannelPlaylists();
-                return playlists;
+                return await videoRetriever.GetChannelPlaylists();
             }
         }
 
         public async Task<VideoInformation> GetLatestChannelVideo()
         {
-            var retVal = await appCache.GetOrAddAsync("latestVideo", () => PopulateLatestVideoCache(), DateTimeOffset.Now.AddHours(8));
-            return retVal;
+            return await appCache.GetOrAddAsync("latestVideo", () => PopulateLatestVideoCache(), DateTimeOffset.Now.AddHours(8));
 
             async Task<VideoInformation> PopulateLatestVideoCache()
             {
-                var latestVideo = await videoRetriever.GetLatestChannelVideo();
-                return latestVideo;
+                return await videoRetriever.GetLatestChannelVideo();
             }
         }
 
-        
+        public async Task<IEnumerable<VideoInformation>> GetPlaylistVideos(string playlistId)
+        {
+            return await appCache.GetOrAddAsync($"playlistVideos-{playlistId}", () => PopulatePlaylistVideosCache(), DateTimeOffset.Now.AddHours(8));
+
+            async Task<IEnumerable<VideoInformation>> PopulatePlaylistVideosCache()
+            {
+                return await videoRetriever.GetPlaylistVideos(playlistId);
+            }
+        }
     }
 
     

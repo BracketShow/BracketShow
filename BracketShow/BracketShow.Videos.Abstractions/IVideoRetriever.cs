@@ -8,5 +8,6 @@ namespace BracketShow.Videos.Abstractions
     {
         Task<VideoInformation> GetLatestChannelVideo();
         Task<IEnumerable<PlaylistInformation>> GetChannelPlaylists();
+        Task<IEnumerable<VideoInformation>> GetPlaylistVideos(string playlistId);
     }
 }
