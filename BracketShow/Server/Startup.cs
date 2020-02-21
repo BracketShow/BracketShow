@@ -24,6 +24,7 @@ namespace BracketShow.Server
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddLazyCache();
             services.AddResponseCompression(opts =>
             {
                 opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
