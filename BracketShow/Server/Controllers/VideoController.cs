@@ -9,7 +9,7 @@ using System.Linq;
 namespace BracketShow.Server.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]/[action]")]
     public class VideoController : ControllerBase
     {
         private readonly ILogger<VideoController> logger;

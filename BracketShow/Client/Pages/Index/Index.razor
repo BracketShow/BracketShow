@@ -1,9 +1,16 @@
 ﻿@page "/"
-@inject IJSRuntime JSRuntime
+
 
 <HomeSection></HomeSection>
 
 <LatestVideoSection></LatestVideoSection>
+
+@if (playlists != null) {
+    foreach (var playlist in playlists)
+    {
+        <PlaylistSection PlaylistInformation="playlist"></PlaylistSection>
+    }
+}
 
 <MediaSection></MediaSection>
 
@@ -40,17 +47,3 @@
         <p>Lorem ipsum...</p>
         <button id="myBtn" onclick="myFunction()">Pause</button>
     </div>*@
-
-@code{
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-            await JSRuntime.InvokeVoidAsync("highlightMenu");
-            await JSRuntime.InvokeVoidAsync("reloadFb", null);
-            StateHasChanged();
-        }
-
-    }
-}
