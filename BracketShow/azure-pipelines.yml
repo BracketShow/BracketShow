@@ -41,22 +41,7 @@ steps:
     publishWebProjects: True
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: True
-
-- task: VSBuild@1
-  displayName: 'Build Dacpac'
-  inputs:
-    solution: '**/*.sqlproj'
-    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(Build.ArtifactStagingDirectory)\\"'
-    platform: '$(BuildPlatform)'
-    configuration: '$(BuildConfiguration)'
-
-- task: CopyFiles@2
-  displayName: 'Copy Dacpac to Staging'
-  inputs:
-    SourceFolder: '$(Build.SourcesDirectory)'
-    Contents: '**/Output/*.dacpac'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
-
+    
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact'
   inputs:
