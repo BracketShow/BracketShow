@@ -13,13 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "testyoutube", "testyoutube\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Videos", "Videos", "{4FD8421C-B3E1-48B4-B7A3-AA50DDBE6509}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BracketShow.Videos", "BracketShow.Videos\BracketShow.Videos.csproj", "{48ED3CBC-CDB1-42CA-8AED-3EAFB7C29E0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BracketShow.Videos", "BracketShow.Videos\BracketShow.Videos.csproj", "{48ED3CBC-CDB1-42CA-8AED-3EAFB7C29E0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BracketShow.Videos.Abstractions", "BracketShow.Videos.Abstractions\BracketShow.Videos.Abstractions.csproj", "{EB27B76F-2519-45B3-A59A-E50A196B60EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BracketShow.Videos.Abstractions", "BracketShow.Videos.Abstractions\BracketShow.Videos.Abstractions.csproj", "{EB27B76F-2519-45B3-A59A-E50A196B60EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BracketShow.Videos.Domain", "BracketShow.Videos.Domain\BracketShow.Videos.Domain.csproj", "{580371DE-6AE7-4128-9520-F5D27ED5CF6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BracketShow.Videos.Domain", "BracketShow.Videos.Domain\BracketShow.Videos.Domain.csproj", "{580371DE-6AE7-4128-9520-F5D27ED5CF6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BracketShow.Videos.Youtube", "BracketShow.Videos.Youtube\BracketShow.Videos.Youtube.csproj", "{64569D87-71AD-4335-9606-0A194A77E60F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BracketShow.Videos.Youtube", "BracketShow.Videos.Youtube\BracketShow.Videos.Youtube.csproj", "{64569D87-71AD-4335-9606-0A194A77E60F}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "BracketShow.Architecture", "BracketShow.Architecture\BracketShow.Architecture.modelproj", "{C221D7A5-7471-425E-8D41-8AE1A7731CCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{64569D87-71AD-4335-9606-0A194A77E60F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64569D87-71AD-4335-9606-0A194A77E60F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64569D87-71AD-4335-9606-0A194A77E60F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C221D7A5-7471-425E-8D41-8AE1A7731CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C221D7A5-7471-425E-8D41-8AE1A7731CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C221D7A5-7471-425E-8D41-8AE1A7731CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C221D7A5-7471-425E-8D41-8AE1A7731CCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

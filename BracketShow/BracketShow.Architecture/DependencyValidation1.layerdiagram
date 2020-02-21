@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="6a8e95b4-bd16-4cf4-9459-b7c65cbe3002" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="9fc7dd47-17c1-42f8-a717-32c0eab560ec" name="BracketShow.Videos">
+      <references>
+        <reference Id="802edc2c-6cf9-4e1f-8bab-544a565b715e" name="BracketShow.Videos">
+          <ArtifactNode Label="BracketShow.Videos" Category="CodeSchema_Project" Id="(Assembly=../BracketShow.Videos/BracketShow.Videos.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=BracketShow.Videos)" Label="BracketShow.Videos.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="88e00b7f-145c-405e-9cfc-1d43c60bf620" name="BracketShow.Videos.Abstractions">
+      <references>
+        <reference Id="ca718298-89fa-42d8-812a-c46b3389e7e3" name="BracketShow.Videos.Abstractions">
+          <ArtifactNode Label="BracketShow.Videos.Abstractions" Category="CodeSchema_Project" Id="(Assembly=../BracketShow.Videos.Abstractions/BracketShow.Videos.Abstractions.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=BracketShow.Videos.Abstractions)" Label="BracketShow.Videos.Abstractions.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="05893238-4e7a-43f1-9c19-52b900e63289" name="BracketShow.Videos.Domain">
+      <references>
+        <reference Id="c372600e-9fbb-45f8-9871-28371a65088c" name="BracketShow.Videos.Domain">
+          <ArtifactNode Label="BracketShow.Videos.Domain" Category="CodeSchema_Project" Id="(Assembly=../BracketShow.Videos.Domain/BracketShow.Videos.Domain.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=BracketShow.Videos.Domain)" Label="BracketShow.Videos.Domain.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="e143b34d-0f35-4410-8352-6604f3af0297" name="BracketShow.Videos.Youtube">
+      <references>
+        <reference Id="dd8659f6-8bea-4b3c-9b4c-bbf0731d5037" name="BracketShow.Videos.Youtube">
+          <ArtifactNode Label="BracketShow.Videos.Youtube" Category="CodeSchema_Project" Id="(Assembly=../BracketShow.Videos.Youtube/BracketShow.Videos.Youtube.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=BracketShow.Videos.Youtube)" Label="BracketShow.Videos.Youtube.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="24c21f69-397d-442d-8591-6f90ef3cd6e8" name="BracketShow.Client">
+      <references>
+        <reference Id="9cbbf6af-aae0-4b9f-b073-f72393740058" name="BracketShow.Client">
+          <ArtifactNode Label="BracketShow.Client" Category="CodeSchema_Project" Id="(Assembly=../Client/BracketShow.Client.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=BracketShow.Client)" Label="BracketShow.Client.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="09a8c5e0-4fba-41e4-a842-38de946aab63" name="BracketShow.Server">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="6a86393d-0e3f-4b49-baf3-a9eb4a702a55" direction="Forward">
+          <layerMoniker Id="24c21f69-397d-442d-8591-6f90ef3cd6e8" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="34485ee8-f573-4b83-be4d-cc7dad7b5788" name="BracketShow.Server">
+          <ArtifactNode Label="BracketShow.Server" Category="CodeSchema_Project" Id="(Assembly=../Server/BracketShow.Server.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=BracketShow.Server)" Label="BracketShow.Server.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="c0fa8ae2-d2be-4977-ad37-a9cc175551bf" name="BracketShow.Shared">
+      <references>
+        <reference Id="51e53787-66aa-498b-b988-f2531fd51521" name="BracketShow.Shared">
+          <ArtifactNode Label="BracketShow.Shared" Category="CodeSchema_Project" Id="(Assembly=../Shared/BracketShow.Shared.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=BracketShow.Shared)" Label="BracketShow.Shared.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>
