@@ -1,0 +1,94 @@
+# ASP.NET Core (.NET Framework)
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+pool: 
+  name: Alien
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+  buildprojects: '**/Angular/**/*.csproj'
+  testprojects: '**/Angular/**/*Tests/*.csproj'
+
+steps:
+- task: DotNetCoreCLI@2
+  displayName: Restore
+  inputs:
+    command: restore
+    projects: '$(buildprojects)'
+
+
+- task: DotNetCoreCLI@2
+  displayName: Build
+  inputs:
+    projects: '$(buildprojects)'
+    arguments: '--configuration $(BuildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  displayName: Test
+  inputs:
+    command: test
+    projects: '$(testprojects)'
+    arguments: '--configuration $(BuildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  displayName: Publish
+  inputs:
+    command: publish
+    publishWebProjects: True
+    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: True
+
+- task: VSBuild@1
+  displayName: 'Build Dacpac'
+  inputs:
+    solution: '**/*.sqlproj'
+    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(Build.ArtifactStagingDirectory)\\"'
+    platform: '$(BuildPlatform)'
+    configuration: '$(BuildConfiguration)'
+
+- task: CopyFiles@2
+  displayName: 'Copy Dacpac to Staging'
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)'
+    Contents: '**/Output/*.dacpac'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact'
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+
+- task: GenerateReleaseNotes@3
+  inputs:
+    outputfile: '$(Build.ArtifactStagingDirectory)\releasenotes.md'
+    templateLocation: 'InLine'
+    inlinetemplate: '# Release notes for release $defname
+      **Release Number**  : $($release.name)    
+      **Release completed** $("{0:dd/MM/yy HH:mm:ss}" -f [datetime]$release.modifiedOn) 
+      
+      ## Builds  
+      @@BUILDLOOP@@
+      ### $($build.definition.name)  
+      **Build Number**  : $($build.buildnumber)    
+      **Build completed** $("{0:dd/MM/yy HH:mm:ss}" -f [datetime]$build.finishTime)     
+      **Source Branch** $($build.sourceBranch)  
+        
+      ### Associated work items  
+      @@WILOOP@@  
+      * **$($widetail.fields.''System.WorkItemType'') $($widetail.id)** [Assigned by: $($widetail.fields.''System.AssignedTo'')] $($widetail.fields.''System.Title'')  
+      @@WILOOP@@  
+        
+      ### Associated change sets/commits  
+      @@CSLOOP@@  
+      * **ID $($csdetail.changesetid)$($csdetail.commitid)$($csdetail.id)** $($csdetail.comment)    
+      @@CSLOOP@@  
+      
+      
+      ----------
+      
+      @@BUILDLOOP@@'
+    generateForOnlyPrimary: False
