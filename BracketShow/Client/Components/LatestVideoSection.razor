@@ -1,4 +1,7 @@
-﻿<article id="page-latest" class="page-section">
+﻿@using BracketShow.Shared
+@inject HttpClient Http
+
+<article id="page-latest" class="page-section">
 
     <header class="page-section-header container text-center">
         <h2 class="page-section-title">Dernière vidéo</h2>
@@ -10,7 +13,11 @@
     <section class="layout-media container my-5">
         <div class="justify-content-center">
             <div class="videoWrapper" style="clip-path: polygon(0 2%, 100% 2%, 100% 98%, 0% 98%)">
-                <iframe src="https://www.youtube.com/embed/q0Q3MM4Owlo" frameborder="0" allowfullscreen></iframe>
+                @if (latestVideo == null) {
+                <p><em>Compilation en cours...</em></p>
+                } else {
+                <iframe src="https://www.youtube.com/embed/@latestVideo.Id" frameborder="0" allowfullscreen></iframe>
+                }
             </div>
         </div>
 
@@ -18,5 +25,12 @@
 
 </article>
 
+@code {
+    private VideoInformation latestVideo;
 
+    protected override async Task OnInitializedAsync()
+    {
+        latestVideo = await Http.GetJsonAsync<VideoInformation>("video");
+    }
 
+}

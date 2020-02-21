@@ -10,7 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BracketShow.Youtube\BracketShow.Youtube.csproj" />
+    <ProjectReference Include="..\BracketShow.Videos.Youtube\BracketShow.Videos.Youtube.csproj" />
+    <ProjectReference Include="..\BracketShow.Videos\BracketShow.Videos.csproj" />
     <ProjectReference Include="..\Client\BracketShow.Client.csproj" />
     <ProjectReference Include="..\Shared\BracketShow.Shared.csproj" />
   </ItemGroup>
