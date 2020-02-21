@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using BracketShow.Videos;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace BracketShow.Server.Controllers
 {
@@ -26,6 +28,17 @@ namespace BracketShow.Server.Controllers
             return new VideoInformation {
                 Id = latestVideo.Id
             };
+        }
+
+        [HttpGet]
+        public async Task<IEnumerable<PlaylistInformation>> GetPlaylistInformation()
+        {
+            var playlists = await videoRetrieverService.GetChannelPlaylists();
+            return playlists.Select(p => new PlaylistInformation
+            {
+                Id = p.Id,
+                Title = p.Title
+            });
         }
     }
 }

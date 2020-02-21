@@ -3,9 +3,7 @@ using BracketShow.Videos.Domain;
 using Google.Apis.Services;
 using Google.Apis.YouTube.v3;
 using Microsoft.Extensions.Options;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace BracketShow.Youtube
@@ -20,25 +18,26 @@ namespace BracketShow.Youtube
             youtubeService = new YouTubeService(new BaseClientService.Initializer() { ApiKey = options.Value.ApiKey });
             channelId = options.Value.ChannelId;
         }
-
-        private void truc()
+        
+        public async Task<IEnumerable<PlaylistInformation>> GetChannelPlaylists()
         {
-            var yt = new YouTubeService(new BaseClientService.Initializer() { ApiKey = "AIzaSyC-oe1mC2E0mwDPOgE8PyUwacNC-4gnHa4" });
+            var playlists = new List<PlaylistInformation>();
 
-            var truc = yt.Playlists.List("snippet,contentDetails");
-            truc.ChannelId = "UCtnYlMKv9vbV6EITjrCwr1g";
+            var playlistRequest = youtubeService.Playlists.List("id,snippet");
+            playlistRequest.ChannelId = channelId;
+            playlistRequest.MaxResults = 50;
 
-            // all playlists
-            var results = truc.Execute();
-            // results.Items[0].Snippet.Title
+            var playlistResponse = await playlistRequest.ExecuteAsync();
+            foreach (var playlist in playlistResponse.Items)
+            {
+                playlists.Add(new PlaylistInformation
+                {
+                    Id = playlist.Id,
+                    Title = playlist.Snippet.Title
+                });
+            }
 
-
-            
-        }
-
-        public IEnumerable<VideoPlaylist> GetChannelPlaylists()
-        {
-            throw new NotImplementedException();
+            return playlists;
         }
 
         public async Task<VideoInformation> GetLatestChannelVideo()

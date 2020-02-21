@@ -1,7 +1,4 @@
-﻿@using BracketShow.Shared
-@inject HttpClient Http
-
-<article id="page-latest" class="page-section">
+﻿<article id="page-latest" class="page-section">
 
     <header class="page-section-header container text-center">
         <h2 class="page-section-title">Dernière vidéo</h2>
@@ -23,14 +20,6 @@
 
     </section>
 
+
+
 </article>
-
-@code {
-    private VideoInformation latestVideo;
-
-    protected override async Task OnInitializedAsync()
-    {
-        latestVideo = await Http.GetJsonAsync<VideoInformation>("video");
-    }
-
-}

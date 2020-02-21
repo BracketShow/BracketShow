@@ -7,6 +7,6 @@ namespace BracketShow.Videos.Abstractions
     public interface IVideoRetriever
     {
         Task<VideoInformation> GetLatestChannelVideo();
-        IEnumerable<VideoPlaylist> GetChannelPlaylists();
+        Task<IEnumerable<PlaylistInformation>> GetChannelPlaylists();
     }
 }

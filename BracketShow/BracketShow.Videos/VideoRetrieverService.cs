@@ -1,6 +1,5 @@
 ﻿using BracketShow.Videos.Abstractions;
 using BracketShow.Videos.Domain;
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -15,9 +14,9 @@ namespace BracketShow.Videos
             this.videoRetriever = videoRetriever;
         }
 
-        public IEnumerable<VideoPlaylist> GetChannelPlaylists()
+        public async Task<IEnumerable<PlaylistInformation>> GetChannelPlaylists()
         {
-            throw new NotImplementedException();
+            return await videoRetriever.GetChannelPlaylists();
         }
 
         public async Task<VideoInformation> GetLatestChannelVideo()

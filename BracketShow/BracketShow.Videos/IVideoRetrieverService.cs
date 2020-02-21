@@ -7,6 +7,6 @@ namespace BracketShow.Videos
     public interface IVideoRetrieverService
     {
         Task<VideoInformation> GetLatestChannelVideo();
-        IEnumerable<VideoPlaylist> GetChannelPlaylists();
+        Task<IEnumerable<PlaylistInformation>> GetChannelPlaylists();
     }
 }

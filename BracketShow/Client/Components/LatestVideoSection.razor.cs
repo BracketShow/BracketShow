@@ -1,29 +1,20 @@
-//using System;
-//using System.Linq;
-//using System.Net.Http;
-//using System.Threading.Tasks;
-//using Microsoft.AspNetCore.Components;
-//using BracketShow.Shared;
+using System.Net.Http;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Components;
+using BracketShow.Shared;
 
-//namespace BracketShow.Client.Components
-//{
-//    public partial class LatestVideoSection : ComponentBase
-//    {
-//        private readonly HttpClient Http;
-//        private VideoInformation latestVideo;
+namespace BracketShow.Client.Components
+{
+    public partial class LatestVideoSection
+    {
+        private VideoInformation latestVideo;
 
-//        public LatestVideoSection()
-//        {
-//        }
+        [Inject]
+        public HttpClient Http { get; set; }
 
-//        public LatestVideoSection(HttpClient httpClient) : this()
-//        {
-//            Http = httpClient;
-//        }
-
-//        protected override async Task OnInitializedAsync()
-//        {
-//            latestVideo = await Http.GetJsonAsync<VideoInformation>("video");
-//        }
-//    }
-//}
+        protected override async Task OnInitializedAsync()
+        {
+            latestVideo = await Http.GetJsonAsync<VideoInformation>("video/GetLatestVideo");
+        }
+    }
+}

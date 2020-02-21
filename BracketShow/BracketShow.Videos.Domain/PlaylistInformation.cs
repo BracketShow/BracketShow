@@ -1,10 +1,5 @@
-﻿namespace BracketShow.Shared
+﻿namespace BracketShow.Videos.Domain
 {
-    public class VideoInformation
-    {
-        public string Id { get; set; }
-    }
-
     public class PlaylistInformation
     {
         public string Id { get; set; }
