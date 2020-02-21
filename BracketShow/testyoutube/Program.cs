@@ -8,7 +8,7 @@ namespace testyoutube
     {
         static void Main(string[] args)
         {
-            var yt = new YouTubeService(new BaseClientService.Initializer() { ApiKey = "AIzaSyC-oe1mC2E0mwDPOgE8PyUwacNC-4gnHa4" });
+            var yt = new YouTubeService(new BaseClientService.Initializer() { ApiKey = "" });
 
             var truc = yt.Playlists.List("snippet,contentDetails");
             truc.ChannelId = "UCtnYlMKv9vbV6EITjrCwr1g";
