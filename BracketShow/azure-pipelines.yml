@@ -10,8 +10,8 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
-  buildprojects: '**/Angular/**/*.csproj'
-  testprojects: '**/Angular/**/*Tests/*.csproj'
+  buildprojects: '**/*.csproj'
+  testprojects: '**/*Tests/*.csproj'
 
 steps:
 - task: DotNetCoreCLI@2
